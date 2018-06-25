@@ -33,7 +33,7 @@
 
   /* Set up the map with initial center and zoom level */
   var map = L.map('map', {
-    center: [13, -21], // EDIT latitude, longitude to re-center map
+    center: [-21, 13], // EDIT latitude, longitude to re-center map
     zoom: 4,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
     scrollWheelZoom: false
   });
@@ -57,7 +57,7 @@
   // controlLayers.addBaseLayer(terrain, 'Stamen Terrain basemap');
 
   /* Display a blue point marker with pop-up text */
-  L.marker([31, -21]).addTo(map) // EDIT latitude, longitude to re-position marker
+  L.marker([-21, 13]).addTo(map) // EDIT latitude, longitude to re-position marker
   .bindPopup("Does this work?"); // EDIT pop-up text message
 
   /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
